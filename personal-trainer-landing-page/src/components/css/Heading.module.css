@@ -1,0 +1,13 @@
+.headingText {
+  text-align: right;
+	text-transform: uppercase;
+	color: transparent;
+	-webkit-text-stroke: 2px var(--primary-color);
+	font-size: 17vw;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 2vw;
+	overflow-x: hidden;
+	user-select: none;
+}
+

@@ -1,9 +1,18 @@
-import { Text } from '@mantine/core';
+import Navbar from '@/components/Navbar';
+import AboutPage from '@/components/page/About.page';
+import ContactPage from '@/components/page/Contact.page';
+import MainPage from '@/components/page/Main.page';
+import PlansPage from '@/components/page/Plans.page';
+
 function Home() {
 	return (
-		<div>
-			<Text>Hello world</Text>
-		</div>
+		<>
+			<Navbar />
+			<MainPage />
+			<PlansPage />
+			<AboutPage />
+			<ContactPage />
+		</>
 	);
 }
 

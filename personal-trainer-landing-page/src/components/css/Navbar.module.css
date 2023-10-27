@@ -1,0 +1,17 @@
+.navbarContainer {
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	width: 100%;
+	border: 1px solid red;
+	font-size: 24px;
+	z-index: 1;
+}
+
+.navLink {
+	text-decoration: none;
+	color: var(--font-color);
+}

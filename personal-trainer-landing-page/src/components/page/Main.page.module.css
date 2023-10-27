@@ -1,0 +1,23 @@
+.container {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 80%;
+	display: flex;
+  align-items: center;
+	justify-content: flex-end;
+  gap: 30px;
+  
+	border: 1px solid pink;
+}
+
+/* .heroImg {
+	position: absolute;
+	bottom: 0;
+} */
+
+.heroInfoContainer {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
