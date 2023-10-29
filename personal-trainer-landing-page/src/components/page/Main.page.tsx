@@ -5,16 +5,36 @@ import Image from 'next/image';
 
 function MainPage() {
 	return (
-		<section id='main' style={{ height: '100vh', border: '1px solid blue' }}>
+		<section id='main' className={classes.mainSection} style={{ height: '100vh', border: '1px solid blue' }}>
 			<Heading title='treningi' />
 
-			<div className={classes.container}>
-				<div className={classes.heroInfoContainer}>
-					<p>Andrzej Szpara</p>
-					<p>Plany TRENINGOWE i ŻYWIENIOWE</p>
-					<p>Współpraca ONLINE</p>
+			<div className={classes.wrapper}>
+				<div className={classes.container}>
+					<div className={classes.showMoreContainer}>
+						<p className={classes.innerText}>Poznaj</p>
+						<p className={`${classes.innerText} ${classes.innerHighlightedText}`}>Ofertę</p>
+						<i className={`ti ti-arrow-down ${classes.innerText}`}></i>
+					</div>
+					<div className={classes.rightSection}>
+						<div className={classes.infoContainer}>
+							<p className={classes.infoFullName}>Andrzej Szpara</p>
+							<div className={classes.infoOfferContainer}>
+								<i className={`ti ti-x ${classes.iconX}`}></i>
+								<p className={classes.innerText}>
+									Plany <span className={classes.innerHighlightedText}>TRENINGOWE</span> i{' '}
+									<span className={classes.innerHighlightedText}>ŻYWIENIOWE</span>
+								</p>
+							</div>
+							<div className={classes.infoOfferContainer}>
+								<i className={`ti ti-x ${classes.iconX}`}></i>
+								<p className={classes.innerText}>
+									Współpraca <span className={classes.innerHighlightedText}>ONLINE</span>
+								</p>
+							</div>
+						</div>
+						<Image src={mainPhoto} alt='' className={classes.heroImg} height={570} />
+					</div>
 				</div>
-				<Image src={mainPhoto} alt='' className={classes.heroImg} height={570} />
 			</div>
 		</section>
 	);

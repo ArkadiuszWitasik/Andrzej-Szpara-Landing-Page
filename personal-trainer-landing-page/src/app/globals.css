@@ -4,6 +4,10 @@
 	--primary-color: #f5fb51;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
