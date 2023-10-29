@@ -8,6 +8,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+section {
+	padding-top: 90px;
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
