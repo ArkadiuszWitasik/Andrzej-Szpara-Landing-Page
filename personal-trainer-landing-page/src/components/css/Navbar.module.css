@@ -1,6 +1,4 @@
 .navbarContainer {
-	position: fixed;
-	top: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -9,9 +7,4 @@
 	border: 1px solid red;
 	font-size: 1.5rem;
 	z-index: 1;
-}
-
-.navLink {
-	text-decoration: none;
-	color: var(--font-color);
 }

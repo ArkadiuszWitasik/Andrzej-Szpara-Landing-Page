@@ -2,10 +2,12 @@ import Heading from '../Heading';
 import classes from './Main.page.module.css';
 import mainPhoto from '../../../public/glowna.webp';
 import Image from 'next/image';
+import Navbar from '../Navbar';
 
 function MainPage() {
 	return (
 		<section id='main' className={classes.mainSection} style={{ height: '100vh', border: '1px solid blue' }}>
+			<Navbar />
 			<Heading title='treningi' />
 
 			<div className={classes.wrapper}>
@@ -13,7 +15,9 @@ function MainPage() {
 					<div className={classes.showMoreContainer}>
 						<p className={classes.innerText}>Poznaj</p>
 						<p className={`${classes.innerText} ${classes.innerHighlightedText}`}>Ofertę</p>
-						<i className={`ti ti-arrow-down ${classes.innerText}`}></i>
+						<a href='#plans'>
+							<i className={`ti ti-arrow-down ${classes.innerText}`}></i>
+						</a>
 					</div>
 					<div className={classes.rightSection}>
 						<div className={classes.infoContainer}>

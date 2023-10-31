@@ -5,19 +5,11 @@ import logo from '../../public/logo.png';
 function Navbar() {
 	return (
 		<nav className={classes.navbarContainer}>
-			<a className={classes.navLink} href='#main'>
-				Strona głowna
-			</a>
-			<a className={classes.navLink} href='#plans'>
-				Plany
-			</a>
+			<a href='#main'>Strona głowna</a>
+			<a href='#plans'>Plany</a>
 			<Image src={logo} alt='Website logo of man lifting and barbell.' width={90} />
-			<a className={classes.navLink} href='#about'>
-				O mnie
-			</a>
-			<a className={classes.navLink} href='#contact'>
-				Kontakt
-			</a>
+			<a href='#about'>O mnie</a>
+			<a href='#contact'>Kontakt</a>
 		</nav>
 	);
 }

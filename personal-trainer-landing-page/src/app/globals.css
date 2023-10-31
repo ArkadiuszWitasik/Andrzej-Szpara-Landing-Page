@@ -8,10 +8,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-section {
-	padding-top: 90px;
-}
-
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -20,5 +16,10 @@ section {
 
 body {
 	background-color: var(--background-color);
+	color: var(--font-color);
+}
+
+a {
+	text-decoration: none;
 	color: var(--font-color);
 }
