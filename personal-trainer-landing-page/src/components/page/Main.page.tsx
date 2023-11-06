@@ -8,7 +8,7 @@ function MainPage() {
 	return (
 		<section id='main' className={classes.mainSection} style={{ height: '100vh', border: '1px solid blue' }}>
 			<Navbar />
-			<Heading title='treningi' />
+			<Heading title='treningi' subtitle='personalne' />
 
 			<div className={classes.wrapper}>
 				<div className={classes.container}>

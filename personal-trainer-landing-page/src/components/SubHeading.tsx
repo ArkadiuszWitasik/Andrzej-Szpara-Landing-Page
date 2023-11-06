@@ -1,11 +1,11 @@
-import classes from './css/Heading.module.css';
+import classes from './css/SubHeading.module.css';
 
-interface HeadingProps {
+interface SubHeadingProps {
 	title: string;
 	subtitle: string;
 }
 
-function Heading({ title, subtitle }: HeadingProps) {
+function SubHeading({ title, subtitle }: SubHeadingProps) {
 	return (
 		<div className={classes.headingContainer}>
 			<h2 className={classes.headingText}>{title}</h2>
@@ -14,4 +14,4 @@ function Heading({ title, subtitle }: HeadingProps) {
 	);
 }
 
-export default Heading;
+export default SubHeading;

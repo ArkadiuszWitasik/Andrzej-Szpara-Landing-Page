@@ -1,9 +1,9 @@
-import Heading from '../Heading';
+import SubHeading from '../SubHeading';
 
 function PlansPage() {
 	return (
 		<section id='plans' style={{ height: '100vh', border: '1px solid royalblue' }}>
-			<Heading title='plany' />
+			<SubHeading title='plany' subtitle='plany'/>
 		</section>
 	);
 }
