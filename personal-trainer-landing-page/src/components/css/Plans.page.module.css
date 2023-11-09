@@ -1,0 +1,59 @@
+.photoContainer {
+  position: relative;
+}
+
+.trainWrapper,
+.dietWrapper {
+	display: flex;
+	width: 85%;
+	gap: 20px;
+}
+
+.trainPlan {
+  right: -44%;
+}
+
+.dietPlan {
+  left: -25%;
+}
+
+.trainPlan,
+.dietPlan {
+	position: absolute;
+	text-transform: uppercase;
+	color: var(--primary-color);
+	font-size: 4rem;
+}
+
+.trainWrapper {
+	margin: 100px auto 0;
+	border: 1px solid pink;
+}
+
+.dietWrapper {
+	justify-content: flex-end;
+	margin: 50px auto 0;
+	border: 1px solid lime;
+}
+
+.trainInfo,
+.dietInfo {
+	display: flex;
+	flex-direction: column;
+	font-size: 1.125rem;
+	text-wrap: balance;
+	justify-content: center;
+}
+
+.trainInfo {
+	width: 50%;
+}
+
+.dietInfo {
+	width: 45%;
+}
+
+.trainInfoListTitle,
+.dietInfoListTitle {
+	font-weight: bold;
+}

@@ -1,12 +1,12 @@
 import Heading from '../Heading';
-import classes from './Main.page.module.css';
+import classes from '../css/Main.page.module.css';
 import mainPhoto from '../../../public/glowna.webp';
 import Image from 'next/image';
 import Navbar from '../Navbar';
 
 function MainPage() {
 	return (
-		<section id='main' className={classes.mainSection} style={{ height: '100vh', border: '1px solid blue' }}>
+		<section id='main' className={classes.mainSection} style={{ height: '100vh' }}>
 			<Navbar />
 			<Heading title='treningi' subtitle='personalne' />
 
@@ -36,7 +36,7 @@ function MainPage() {
 								</p>
 							</div>
 						</div>
-						<Image src={mainPhoto} alt='' className={classes.heroImg} height={570} />
+						<Image src={mainPhoto} alt='' height={570} />
 					</div>
 				</div>
 			</div>
