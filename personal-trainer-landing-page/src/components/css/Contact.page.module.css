@@ -1,0 +1,31 @@
+.contactContainer {
+	display: flex;
+	width: 85%;
+	margin: 100px auto 0;
+	justify-content: flex-start;
+}
+
+.contactInfoContainer {
+	width: 50%;
+	display: flex;
+	border: 1px solid pink;
+	flex-direction: column;
+  gap: 10px;
+}
+
+.contactInfoTitleText {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.contactInfoContent {
+	display: flex;
+	gap: 5px;
+	font-size: 1.5rem;
+}
+
+.contactInfoBar {
+	width: 5px;
+	background-color: var(--primary-color);
+}

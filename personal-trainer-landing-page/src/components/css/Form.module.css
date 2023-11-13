@@ -1,0 +1,41 @@
+.formContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 50%;
+	border: 1px solid blue;
+}
+
+.inputContainer {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.inputLabel {
+	position: absolute;
+	top: -13px;
+	padding-left: 10px;
+	padding-right: 10px;
+	left: 20px;
+	color: var(--primary-color);
+	background-color: var(--background-color);
+	text-transform: uppercase;
+}
+
+.input {
+	height: 50px;
+	background-color: transparent;
+	border: 2px solid var(--font-color);
+	color: var(--font-color);
+}
+
+.formButton {
+	margin: 0 auto;
+	padding: 8px 16px;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: none;
+	color: var(--primary-color);
+	cursor: pointer;
+}

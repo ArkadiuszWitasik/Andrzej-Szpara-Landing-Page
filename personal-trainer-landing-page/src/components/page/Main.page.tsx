@@ -25,7 +25,7 @@ function MainPage() {
 							<div className={classes.infoOfferContainer}>
 								<i className={`ti ti-x ${classes.iconX}`}></i>
 								<p className={classes.innerText}>
-									Plany <span className={classes.innerHighlightedText}>TRENINGOWE</span> i{' '}
+									Plany <span className={classes.innerHighlightedText}>TRENINGOWE</span> i&nbsp;
 									<span className={classes.innerHighlightedText}>ŻYWIENIOWE</span>
 								</p>
 							</div>
@@ -36,7 +36,7 @@ function MainPage() {
 								</p>
 							</div>
 						</div>
-						<Image src={mainPhoto} alt='' height={570} />
+						<Image src={mainPhoto} alt='Mężczyzna stojący na siłowni przed lustrem' height={580} />
 					</div>
 				</div>
 			</div>
