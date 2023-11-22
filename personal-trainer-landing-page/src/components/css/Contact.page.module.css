@@ -1,16 +1,15 @@
 .contactContainer {
 	display: flex;
 	width: 85%;
-	margin: 100px auto 0;
+	margin: 100px auto 50px;
 	justify-content: flex-start;
 }
 
 .contactInfoContainer {
 	width: 50%;
 	display: flex;
-	border: 1px solid pink;
 	flex-direction: column;
-  gap: 10px;
+	gap: 10px;
 }
 
 .contactInfoTitleText {

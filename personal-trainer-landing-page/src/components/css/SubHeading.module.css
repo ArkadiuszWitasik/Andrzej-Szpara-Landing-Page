@@ -23,7 +23,7 @@
 	font-size: 16vw;
 	letter-spacing: 3vw;
 	line-height: 0.8;
-	/* user-select: none; */
+	user-select: none;
 }
 
 /* .headingText {

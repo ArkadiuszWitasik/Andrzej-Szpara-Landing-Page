@@ -20,6 +20,8 @@ function Form() {
 
 	return (
 		<form className={classes.formContainer} onSubmit={handleSendForm}>
+			<p className={classes.formTitleText}>Napisz już teraz!</p>
+
 			<div className={classes.inputContainer}>
 				<label className={classes.inputLabel}>Email</label>
 				<input type='email' name='email' value={formData.email} onChange={handleChange} className={classes.input} />
@@ -32,7 +34,12 @@ function Form() {
 
 			<div className={classes.inputContainer}>
 				<label className={classes.inputLabel}>Treść</label>
-				<textarea name='message' value={formData.message} onChange={handleChange} className={classes.input} />
+				<textarea
+					name='message'
+					value={formData.message}
+					onChange={handleChange}
+					className={`${classes.input} ${classes.formTextarea}`}
+				/>
 			</div>
 
 			<button type='submit' className={classes.formButton}>

@@ -5,7 +5,7 @@ import SubHeading from '../SubHeading';
 
 function ContactPage() {
 	return (
-		<section id='contact' style={{ height: '200vh' }}>
+		<section id='contact'>
 			<SubHeading title='kontakt' subtitle='kontakt' />
 			<div className={classes.contactContainer}>
 				<div className={classes.contactInfoContainer}>
