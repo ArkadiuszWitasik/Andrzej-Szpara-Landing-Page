@@ -1,16 +1,17 @@
 import classes from '../css/Plans.page.module.css';
 import SubHeading from '../SubHeading';
 import Image from 'next/image';
-import mainPhoto from '../../../public/glowna.webp';
+import train from '../../../public/trening.webp';
+import diet from '../../../public/dieta.webp'
 
 function PlansPage() {
 	return (
-		<section id='plans' style={{ border: '1px solid blue' }}>
+		<section id='plans'>
 			<SubHeading title='plany' subtitle='plany' />
 			<div className={classes.trainWrapper}>
 				<div className={classes.photoContainer}>
 					<h2 className={classes.trainPlan}>trening</h2>
-					<Image src={mainPhoto} alt='' height={570} />
+					<Image src={train} alt='Mężczyzna stojący ze sztangą' loading='lazy'/>
 				</div>
 				<div className={classes.trainInfo}>
 					<h3>Gotowy na zmiany?</h3>
@@ -18,7 +19,7 @@ function PlansPage() {
 						Jeśli jesteś gotowy na rewolucję w swoim życiu i chcesz zostać najlepszą wersję siebie, to jestem tu, by Ci
 						pomóc! Jako trener, jestem twoim przewodnikiem w drodze do lepszej kondycji, zdrowia i samopoczucia.
 					</p>
-					<h3>Dlaczego warto trenować z trenerem personalnym? </h3>
+					<h3 style={{ marginTop: '10px' }}>Dlaczego warto trenować z trenerem personalnym? </h3>
 					<p>
 						<span className={classes.trainInfoListTitle}>Indywidualizm:</span> Twój plan treningowy będzie idealnie
 						dopasowany do Twoich celów, umiejętności i ograniczeń.
@@ -57,7 +58,7 @@ function PlansPage() {
 						jedzenia pomogą Ci osiągnąć lub utrzymać wymarzoną wagę.
 					</p>
 					<p>
-						<span className={classes.dietInfoListTitle}>Wsparcie:</span>Jako trener, jestem tutaj, by Cię motywować,
+						<span className={classes.dietInfoListTitle}>Wsparcie:</span> Jako trener, jestem tutaj, by Cię motywować,
 						śledzić Twoje postępy i odpowiedzieć na wszystkie pytania.
 					</p>
 					<p>
@@ -65,13 +66,13 @@ function PlansPage() {
 						unikniesz powszechnych błędów żywieniowych.
 					</p>
 					<p>
-						<span>Kulinarna różnorodność:</span> Twój jadłospis będzie smaczny i różnorodny, bez nudzenia się tą samą
+						<span className={classes.trainInfoListTitle}>Kulinarna różnorodność:</span> Twój jadłospis będzie smaczny i różnorodny, bez nudzenia się tą samą
 						dietą.
 					</p>
 				</div>
 				<div className={classes.photoContainer}>
 					<h2 className={classes.dietPlan}>dieta</h2>
-					<Image src={mainPhoto} alt='' height={570} />
+					<Image src={diet} alt='Owsianka ze szklanką mleka obok' loading='lazy'/>
 				</div>
 			</div>
 		</section>

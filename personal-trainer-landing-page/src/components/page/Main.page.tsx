@@ -1,6 +1,7 @@
 import Heading from '../Heading';
 import classes from '../css/Main.page.module.css';
 import mainPhoto from '../../../public/glowna.webp';
+import bars from '../../../public/bars.svg';
 import Image from 'next/image';
 import Navbar from '../Navbar';
 
@@ -21,22 +22,25 @@ function MainPage() {
 					</div>
 					<div className={classes.rightSection}>
 						<div className={classes.infoContainer}>
-							<p className={classes.infoFullName}>Andrzej Szpara</p>
-							<div className={classes.infoOfferContainer}>
-								<i className={`ti ti-x ${classes.iconX}`}></i>
-								<p className={classes.innerText}>
-									Plany <span className={classes.innerHighlightedText}>TRENINGOWE</span> i&nbsp;
-									<span className={classes.innerHighlightedText}>ŻYWIENIOWE</span>
-								</p>
+							<div>
+								<p className={classes.infoFullName}>Andrzej Szpara</p>
+								<div className={classes.infoOfferContainer}>
+									<i className={`ti ti-x ${classes.iconX}`}></i>
+									<p className={classes.innerText}>
+										Plany <span className={classes.innerHighlightedText}>TRENINGOWE</span> i&nbsp;
+										<span className={classes.innerHighlightedText}>ŻYWIENIOWE</span>
+									</p>
+								</div>
+								<div className={classes.infoOfferContainer}>
+									<i className={`ti ti-x ${classes.iconX}`}></i>
+									<p className={classes.innerText}>
+										Współpraca <span className={classes.innerHighlightedText}>ONLINE</span>
+									</p>
+								</div>
 							</div>
-							<div className={classes.infoOfferContainer}>
-								<i className={`ti ti-x ${classes.iconX}`}></i>
-								<p className={classes.innerText}>
-									Współpraca <span className={classes.innerHighlightedText}>ONLINE</span>
-								</p>
-							</div>
+							<Image src={bars} alt='bars' width={600}/>
 						</div>
-						<Image src={mainPhoto} alt='Mężczyzna stojący na siłowni przed lustrem' height={580} />
+						<Image src={mainPhoto} alt='Mężczyzna stojący na siłowni przed lustrem'/>
 					</div>
 				</div>
 			</div>

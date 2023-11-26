@@ -34,7 +34,7 @@ function ContactPage() {
 						<div className={classes.contactInfoTitleText}>adres</div>
 						<div className={classes.contactInfoContent}>
 							<div className={classes.contactInfoBar}></div>
-							<p>adres siłki ul. miodowa</p>
+							<p>Barcza 54, 10-001 Olsztyn</p>
 						</div>
 					</div>
 				</div>

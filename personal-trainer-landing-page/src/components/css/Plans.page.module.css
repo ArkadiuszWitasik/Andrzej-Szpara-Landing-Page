@@ -27,13 +27,11 @@
 
 .trainWrapper {
 	margin: 100px auto 0;
-	border: 1px solid pink;
 }
 
 .dietWrapper {
 	justify-content: flex-end;
 	margin: 50px auto 0;
-	border: 1px solid lime;
 }
 
 .trainInfo,
@@ -55,5 +53,6 @@
 
 .trainInfoListTitle,
 .dietInfoListTitle {
+	color: var(--primary-color);
 	font-weight: bold;
 }
