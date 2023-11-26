@@ -11,10 +11,12 @@
 
 .trainPlan {
   right: -44%;
+	z-index: 1;
 }
 
 .dietPlan {
   left: -25%;
+	z-index: 1;
 }
 
 .trainPlan,

@@ -2,7 +2,7 @@ import classes from '../css/Plans.page.module.css';
 import SubHeading from '../SubHeading';
 import Image from 'next/image';
 import train from '../../../public/trening.webp';
-import diet from '../../../public/dieta.webp'
+import diet from '../../../public/dieta.webp';
 
 function PlansPage() {
 	return (
@@ -11,7 +11,7 @@ function PlansPage() {
 			<div className={classes.trainWrapper}>
 				<div className={classes.photoContainer}>
 					<h2 className={classes.trainPlan}>trening</h2>
-					<Image src={train} alt='Mężczyzna stojący ze sztangą' loading='lazy'/>
+					<Image src={train} alt='Mężczyzna stojący ze sztangą' loading='lazy' style={{ filter: 'brightness(0.55)' }} />
 				</div>
 				<div className={classes.trainInfo}>
 					<h3>Gotowy na zmiany?</h3>
@@ -66,13 +66,18 @@ function PlansPage() {
 						unikniesz powszechnych błędów żywieniowych.
 					</p>
 					<p>
-						<span className={classes.trainInfoListTitle}>Kulinarna różnorodność:</span> Twój jadłospis będzie smaczny i różnorodny, bez nudzenia się tą samą
-						dietą.
+						<span className={classes.trainInfoListTitle}>Kulinarna różnorodność:</span> Twój jadłospis będzie smaczny i
+						różnorodny, bez nudzenia się tą samą dietą.
 					</p>
 				</div>
 				<div className={classes.photoContainer}>
 					<h2 className={classes.dietPlan}>dieta</h2>
-					<Image src={diet} alt='Owsianka ze szklanką mleka obok' loading='lazy'/>
+					<Image
+						src={diet}
+						alt='Owsianka ze szklanką mleka obok'
+						loading='lazy'
+						style={{ filter: 'brightness(0.55)' }}
+					/>
 				</div>
 			</div>
 		</section>

@@ -38,9 +38,13 @@ function MainPage() {
 									</p>
 								</div>
 							</div>
-							<Image src={bars} alt='bars' width={600}/>
+							<Image src={bars} alt='bars' width={600} />
 						</div>
-						<Image src={mainPhoto} alt='Mężczyzna stojący na siłowni przed lustrem'/>
+						<Image
+							src={mainPhoto}
+							alt='Mężczyzna stojący na siłowni przed lustrem'
+							style={{ filter: 'brightness(0.55)', zIndex: '-1' }}
+						/>
 					</div>
 				</div>
 			</div>
