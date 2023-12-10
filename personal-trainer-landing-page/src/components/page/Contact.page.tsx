@@ -5,40 +5,40 @@ import SubHeading from '../SubHeading';
 
 function ContactPage() {
 	return (
-		<section id='contact'>
+		<section id='contact' className={classes.contactPage}>
 			<SubHeading title='kontakt' subtitle='kontakt' />
 			<div className={classes.contactContainer}>
+				<Form />
 				<div className={classes.contactInfoContainer}>
-					<div>
-						<div className={classes.contactInfoTitleText}>telefon</div>
-						<div className={classes.contactInfoContent}>
-							<div className={classes.contactInfoBar}></div>
-							<p>534 958 464</p>
+					<div className={classes.contactInfoItem}>
+						<p className={classes.contactInfoItemTitle}>TELEFON</p>
+						<div className={classes.contactInfoItemDescription}>
+							<div className={classes.verticalDivider} />
+							<p className={classes.contactInfoItemDescriptionText}>999 999 999</p>
 						</div>
 					</div>
-					<div>
-						<div className={classes.contactInfoTitleText}>instagram</div>
-						<div className={classes.contactInfoContent}>
-							<div className={classes.contactInfoBar}></div>
-							<p>andrzejszpara</p>
+					<div className={classes.contactInfoItem}>
+						<p className={classes.contactInfoItemTitle}>INSTAGRAM</p>
+						<div className={classes.contactInfoItemDescription}>
+							<div className={classes.verticalDivider} />
+							<p className={classes.contactInfoItemDescriptionText}>andrzejszpara</p>
 						</div>
 					</div>
-					<div>
-						<div className={classes.contactInfoTitleText}>email</div>
-						<div className={classes.contactInfoContent}>
-							<div className={classes.contactInfoBar}></div>
-							<p>andrzej.szpara@onet.pl</p>
+					<div className={classes.contactInfoItem}>
+						<p className={classes.contactInfoItemTitle}>EMAIL</p>
+						<div className={classes.contactInfoItemDescription}>
+							<div className={classes.verticalDivider} />
+							<p className={classes.contactInfoItemDescriptionText}>andrzej.szpara@onet.pl</p>
 						</div>
 					</div>
-					<div>
-						<div className={classes.contactInfoTitleText}>adres</div>
-						<div className={classes.contactInfoContent}>
-							<div className={classes.contactInfoBar}></div>
-							<p>Barcza 54, 10-001 Olsztyn</p>
+					<div className={classes.contactInfoItem}>
+						<p className={classes.contactInfoItemTitle}>ADRES</p>
+						<div className={classes.contactInfoItemDescription}>
+							<div className={classes.verticalDivider} />
+							<p className={classes.contactInfoItemDescriptionText}>Barcza 54, 10-001 Olsztyn</p>
 						</div>
 					</div>
 				</div>
-				<Form />
 			</div>
 		</section>
 	);

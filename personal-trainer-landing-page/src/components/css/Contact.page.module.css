@@ -1,30 +1,73 @@
+.contactPage {
+	margin-bottom: 30px;
+}
+
 .contactContainer {
+	width: 92%;
+	margin: 30px auto 0;
 	display: flex;
-	width: 85%;
-	margin: 100px auto 50px;
-	justify-content: flex-start;
+	flex-direction: column;
+	gap: 30px;
 }
 
 .contactInfoContainer {
-	width: 50%;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 }
 
-.contactInfoTitleText {
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 2rem;
+.contactInfoItem {
+	display: flex;
+	flex-direction: column;
 }
 
-.contactInfoContent {
-	display: flex;
-	gap: 5px;
+.contactInfoItemTitle {
+	font-weight: bold;
 	font-size: 1.5rem;
 }
 
-.contactInfoBar {
+.contactInfoItemDescription {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.contactInfoItemDescriptionText {
+	font-size: 1.25rem;
+}
+
+.verticalDivider {
 	width: 5px;
+	height: 20px;
 	background-color: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+	.contactContainer {
+		margin: 50px auto 0;
+	}
+
+	.contactInfoItemTitle {
+		font-size: 2rem;
+	}
+
+	.contactInfoItemDescriptionText {
+		font-size: 1.75rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.contactContainer {
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		margin: 90px auto 0;
+	}
+	
+	.contactInfoContainer {
+		align-self: flex-end;
+	}
+
+	.contactPage {
+		margin-bottom: 100px;
+	}
 }

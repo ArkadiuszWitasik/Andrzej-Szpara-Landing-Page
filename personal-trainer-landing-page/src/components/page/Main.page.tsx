@@ -3,47 +3,93 @@ import classes from '../css/Main.page.module.css';
 import mainPhoto from '../../../public/glowna.webp';
 import bars from '../../../public/bars.svg';
 import Image from 'next/image';
-import Navbar from '../Navbar';
 
 function MainPage() {
 	return (
-		<section id='main' className={classes.mainSection} style={{ height: '100vh' }}>
-			<Navbar />
+		<section id='main' className={classes.mainSection}>
 			<Heading title='treningi' subtitle='personalne' />
-
-			<div className={classes.wrapper}>
-				<div className={classes.container}>
-					<div className={classes.showMoreContainer}>
-						<p className={classes.innerText}>Poznaj</p>
-						<p className={`${classes.innerText} ${classes.innerHighlightedText}`}>Ofertę</p>
-						<a href='#plans'>
-							<i className={`ti ti-arrow-down ${classes.innerText}`}></i>
+			<div className={classes.mainSectionContent}>
+				<div className={classes.freeConsultationContainer}>
+					<div className={classes.xIconContainer}>
+						<i className={`ti ti-x ${classes.iconX}`}></i>
+						<p>
+							Plany&nbsp;<span className={classes.uppercaseBoldText}>treningowe</span>&nbsp;i&nbsp;
+							<span className={classes.uppercaseBoldText}>żywieniowe</span>
+						</p>
+					</div>
+					<div className={classes.xIconContainer}>
+						<i className={`ti ti-x ${classes.iconX}`}></i>
+						<p>
+							Współpraca&nbsp;<span className={classes.uppercaseBoldText}>online</span>
+						</p>
+					</div>
+					<a href='#contact'>
+						Umów się na&nbsp;<span className={classes.uppercaseBoldText}>&nbsp;bezpłatną&nbsp;</span>konsultację&nbsp;
+					</a>
+				</div>
+				<div className={classes.plansRedirectContainer}>
+					<div className={classes.plansRedirectText}>
+						<div className={classes.tabletFreeConsultationContainer}>
+							<div className={classes.xIconContainer}>
+								<i className={`ti ti-x ${classes.iconX}`}></i>
+								<p>
+									Plany&nbsp;<span className={classes.uppercaseBoldText}>treningowe</span>&nbsp;i&nbsp;
+									<span className={classes.uppercaseBoldText}>żywieniowe</span>
+								</p>
+							</div>
+							<div className={classes.xIconContainer}>
+								<i className={`ti ti-x ${classes.iconX}`}></i>
+								<p>
+									Współpraca&nbsp;<span className={classes.uppercaseBoldText}>online</span>
+								</p>
+							</div>
+							<a href='#contact' className={classes.tabletContactRef}>
+								Umów się na&nbsp;<span className={classes.uppercaseBoldText}>&nbsp;bezpłatną&nbsp;</span>
+								konsultację&nbsp;
+							</a>
+						</div>
+						<a href='#plans' className={classes.checkOffer}>
+							<p style={{ textTransform: 'capitalize' }}>poznaj</p>
+							<p className={classes.uppercaseBoldText}>ofertę</p>
+							<i className={`ti ti-arrow-down`}></i>
 						</a>
 					</div>
-					<div className={classes.rightSection}>
-						<div className={classes.infoContainer}>
-							<div>
-								<p className={classes.infoFullName}>Andrzej Szpara</p>
-								<div className={classes.infoOfferContainer}>
-									<i className={`ti ti-x ${classes.iconX}`}></i>
-									<p className={classes.innerText}>
-										Plany <span className={classes.innerHighlightedText}>TRENINGOWE</span> i&nbsp;
-										<span className={classes.innerHighlightedText}>ŻYWIENIOWE</span>
-									</p>
-								</div>
-								<div className={classes.infoOfferContainer}>
-									<i className={`ti ti-x ${classes.iconX}`}></i>
-									<p className={classes.innerText}>
-										Współpraca <span className={classes.innerHighlightedText}>ONLINE</span>
-									</p>
-								</div>
+					<div className={classes.desktopConsultationContainer}>
+						<div className={classes.desktopConsultationTextContainer}>
+							<p className={classes.desktopConsultationTrenerCredentials}>Andrzej Szpara</p>
+							<div className={classes.xIconContainer}>
+								<i className={`ti ti-x ${classes.iconX}`}></i>
+								<p>
+									Plany&nbsp;<span className={classes.uppercaseBoldText}>treningowe</span>&nbsp;i&nbsp;
+									<span className={classes.uppercaseBoldText}>żywieniowe</span>
+								</p>
 							</div>
-							<Image src={bars} alt='bars' width={600} />
+							<div className={classes.xIconContainer}>
+								<i className={`ti ti-x ${classes.iconX}`}></i>
+								<p>
+									Współpraca&nbsp;<span className={classes.uppercaseBoldText}>online</span>
+								</p>
+							</div>
+							<a href='#contact'>
+								Umów się na&nbsp;<span className={classes.uppercaseBoldText}>bezpłatną</span>&nbsp;konsultację
+							</a>
 						</div>
+						<div className={classes.desktopBarsImage}>
+							<Image
+								src={bars}
+								alt=''
+								style={{ objectFit: 'contain', objectPosition: 'center bottom' }}
+								sizes='100vw'
+							/>
+						</div>
+					</div>
+					<div className={classes.mainPhoto}>
 						<Image
 							src={mainPhoto}
-							alt='Mężczyzna stojący na siłowni przed lustrem'
-							style={{ filter: 'brightness(0.55)', zIndex: '-1' }}
+							alt=''
+							fill
+							style={{ objectFit: 'contain', objectPosition: 'right' }}
+							sizes='100vw'
 						/>
 					</div>
 				</div>

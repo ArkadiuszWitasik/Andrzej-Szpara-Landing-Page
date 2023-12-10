@@ -1,63 +1,207 @@
 .mainSection {
+	position: relative;
+	height: 100vh;
 	display: flex;
+	padding-top: 90px;
 	flex-direction: column;
-	justify-content: space-between;
 }
 
-.wrapper {
-	height: 100%;
+.mainPhoto {
+	height: 50vh;
+	width: 300px;
+	position: relative;
+	z-index: -1;
+}
+
+.mainSectionContent {
 	display: flex;
+	flex-direction: column;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.freeConsultationContainer {
+	display: flex;
+	font-size: 1.1rem;
+	flex-direction: column;
 	justify-content: center;
+	margin: 0 auto 10px;
 }
 
-.container {
-	width: 85%;
+.tabletFreeConsultationContainer {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 10px 0;
+	font-size: 1.175rem;
+}
+
+.tabletContactRef {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.plansRedirectContainer {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
 }
 
-.rightSection {
-	display: flex;
-	align-items: flex-end;
-	gap: 30px;
-}
-
-.showMoreContainer {
+.plansRedirectText {
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	align-self: flex-end;
+	justify-content: flex-end;
+	margin-bottom: 5px;
+	gap: 200px;
 }
 
-.infoContainer {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	gap: 100px;
-}
-
-.infoFullName {
-	font-size: 4rem;
+.uppercaseBoldText {
 	font-weight: bold;
+	color: var(--primary-color);
+	text-transform: uppercase;
 }
 
-.infoOfferContainer {
+.xIconContainer {
 	display: flex;
 	align-items: center;
-	gap: 10px;
 }
 
 .iconX {
 	color: var(--primary-color);
-	font-size: 1.5rem;
 }
 
-.innerText {
-	font-size: 2.25rem;
+.checkOffer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.innerHighlightedText {
+.desktopConsultationContainer {
+	display: none;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 50%;
+	font-size: 2rem;
+}
+
+.desktopConsultationTextContainer {
+	margin: 0 auto 0;
+}
+
+.desktopBarsImage {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-self: flex-end;
+	width: 100%;
+	height: 129px;
+	margin-top: 80px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.desktopConsultationTrenerCredentials {
 	font-weight: bold;
-	color: var(--primary-color);
+	font-size: 3rem;
+	letter-spacing: 2px;
+}
+
+@media (max-width: 320px) {
+	.mainPhoto {
+		height: 300px;
+		width: 300px;
+		border: 1px solid cyan;
+	}
+
+	.freeConsultationContainer {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.mainSection {
+		padding-top: 0px;
+		height: 90vh;
+	}
+
+	.freeConsultationContainer {
+		display: none;
+	}
+
+	.tabletFreeConsultationContainer {
+		display: flex;
+	}
+
+	.plansRedirectText {
+		font-size: 1.5rem;
+	}
+
+	.mainPhoto {
+		height: 660px;
+		width: 500px;
+		border: 1px solid orange;
+	}
+}
+
+@media (min-width: 992px) {
+	.mainSection {
+		padding-top: 0px;
+	}
+
+	.freeConsultationContainer {
+		display: none;
+	}
+
+	.tabletFreeConsultationContainer {
+		display: flex;
+	}
+
+	.mainPhoto {
+		height: 600px;
+		width: 500px;
+		border: 1px solid lime;
+	}
+}
+
+@media (min-width: 1200px) {
+	.mainSection {
+		padding-top: 0px;
+	}
+
+	.freeConsultationContainer {
+		display: none;
+	}
+
+	.tabletFreeConsultationContainer {
+		display: none;
+	}
+
+	.plansRedirectText {
+		width: 20%;
+	}
+
+	.desktopConsultationContainer {
+		display: flex;
+	}
+
+	.mainPhoto {
+		height: 550px;
+		width: 500px;
+		border: 1px solid magenta;
+	}
+}
+
+@media (min-width: 1400) {
+	.mainSection {
+		padding-top: 0px;
+	}
+
+	.desktopConsultationContainer {
+		display: flex;
+	}
+
+	.mainPhoto {
+		border: 1px solid brown;
+	}
 }

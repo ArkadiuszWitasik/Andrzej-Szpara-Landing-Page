@@ -1,60 +1,130 @@
-.photoContainer {
-  position: relative;
-}
-
-.trainWrapper,
-.dietWrapper {
-	display: flex;
-	width: 85%;
-	gap: 20px;
-}
-
-.trainPlan {
-  right: -44%;
-	z-index: 1;
-}
-
-.dietPlan {
-  left: -25%;
-	z-index: 1;
-}
-
-.trainPlan,
-.dietPlan {
-	position: absolute;
-	text-transform: uppercase;
-	color: var(--primary-color);
-	font-size: 4rem;
-}
-
-.trainWrapper {
-	margin: 100px auto 0;
-}
-
-.dietWrapper {
-	justify-content: flex-end;
-	margin: 50px auto 0;
-}
-
-.trainInfo,
-.dietInfo {
+.offersContainer {
 	display: flex;
 	flex-direction: column;
-	font-size: 1.125rem;
-	text-wrap: balance;
-	justify-content: center;
+	width: 93%;
+	margin: 30px auto 0;
+	gap: 40px;
 }
 
-.trainInfo {
-	width: 50%;
+.trainOfferContainer {
+	display: flex;
+	gap: 30px;
 }
 
-.dietInfo {
-	width: 45%;
+.dietOfferContainer {
+	display: flex;
+	gap: 30px;
 }
 
-.trainInfoListTitle,
-.dietInfoListTitle {
+.dietRightAlign {
+	display: flex;
+	flex-direction: column;
+}
+
+.offerTitle {
+	position: relative;
 	color: var(--primary-color);
 	font-weight: bold;
+	font-size: 1.75rem;
+	letter-spacing: 2px;
+}
+
+.trainOfferTitleOffset {
+	left: 0px;
+}
+
+.dietOfferTitleOffset {
+	right: 0px;
+}
+
+.offerList {
+	list-style: none;
+}
+
+.offerListItem {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 5px;
+	text-wrap: balance;
+}
+
+.iconX {
+	color: var(--primary-color);
+	padding-top: 5px;
+}
+
+.offerListItemTitle {
+	font-weight: bold;
+	letter-spacing: 1.1px;
+}
+
+.imageContainer {
+	display: none;
+	position: relative;
+	width: 200px;
+	height: 300px;
+	z-index: -1;
+}
+
+@media (min-width: 768px) {
+	.imageContainer {
+		display: block;
+		width: 600px;
+	}
+
+	.offersContainer {
+		margin: 50px auto 0;
+	}
+
+	.offerList {
+		width: 80%;
+	}
+
+	.dietRightAlign {
+		align-items: flex-end;
+	}
+
+	.trainOfferTitleOffset {
+		left: -90px;
+	}
+
+	.dietOfferTitleOffset {
+		right: -70px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.imageContainer {
+		display: block;
+		height: 550px;
+		width: 400px;
+	}
+
+	.offersContainer {
+		margin: 70px auto 0;
+	}
+
+	.offerTitle {
+		font-size: 3rem;
+	}
+
+	.offerList {
+		width: 50%;
+	}
+
+	.offerListItem {
+		font-size: 1.2rem;
+	}
+
+	.trainOfferTitleOffset {
+		left: -110px;
+	}
+
+	.dietOfferTitleOffset {
+		right: -90px;
+	}
+
+	.dietRightAlign {
+		align-items: flex-end;
+	}
 }
