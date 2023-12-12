@@ -1,7 +1,12 @@
-import { useState } from 'react';
+'use client';
+import { useEffect, useState } from 'react';
+import { useForm } from '@formspree/react';
 import classes from './css/Form.module.css';
+import toast from 'react-hot-toast';
 
 function Form() {
+	const [state, handleSubmit] = useForm(`${process.env.NEXT_PUBLIC_FORMSPREE_KEY!}`);
+	const [canSendEmail, setCanSendEmail] = useState<boolean>(true);
 	const [formData, setFormData] = useState({
 		email: '',
 		subject: '',
@@ -13,13 +18,44 @@ function Form() {
 		setFormData(prevData => ({ ...prevData, [name]: value }));
 	};
 
-	const handleSendForm = (e: React.FormEvent<HTMLFormElement>) => {
-		e.preventDefault();
-		console.log('Wysłano formularz:', formData);
-	};
+	useEffect(() => {
+		if (state.succeeded) {
+			setFormData({ email: '', subject: '', message: '' });
+			toast.success('Pomyślnie wysłano wiadomość!', {
+				style: {
+					background: '#2e2e2e',
+					color: '#e4e4e4',
+				},
+			});
+
+			setCanSendEmail(false);
+
+			setTimeout(() => {
+				setCanSendEmail(true);
+			}, 10000);
+		}
+	}, [state.succeeded]);
+
+	useEffect(() => {
+		if (state.errors) {
+			setFormData({ email: '', subject: '', message: '' });
+			toast.error('Wystąpił problem z wysyłaniem wiadomości!', {
+				style: {
+					background: '#2e2e2e',
+					color: '#e4e4e4',
+				},
+			});
+
+			setCanSendEmail(false);
+
+			setTimeout(() => {
+				setCanSendEmail(true);
+			}, 10000);
+		}
+	}, [state.errors]);
 
 	return (
-		<form className={classes.formContainer} onSubmit={handleSendForm}>
+		<form className={classes.formContainer} onSubmit={handleSubmit}>
 			<p className={classes.formTitleText}>Napisz już teraz!</p>
 
 			<div className={classes.inputContainer}>
@@ -42,9 +78,15 @@ function Form() {
 				/>
 			</div>
 
-			<button type='submit' className={classes.formButton}>
-				Wyślij
-			</button>
+			{canSendEmail ? (
+				<button type='submit' className={classes.formButton}>
+					Wyślij
+				</button>
+			) : (
+				<button disabled={true} className={classes.disabledFormButton}>
+					Wyślij
+				</button>
+			)}
 		</form>
 	);
 }

@@ -1,7 +1,9 @@
 :root {
 	--font-color: #e4e4e4;
-	--background-color: #000000;
+	--font-color-light: #bfbfbf;
+	--background-color: #1b1b1b;
 	--primary-color: #f5fb51;
+	--background-color-light: #2e2e2e;
 }
 
 html {

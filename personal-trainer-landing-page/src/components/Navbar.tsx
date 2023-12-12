@@ -27,7 +27,7 @@ function Navbar() {
 					<p>Andrzej Szpara</p>
 				</div>
 				<button className={classes.menuIcon} onClick={handleOpenMobileMenu}>
-					<i className={`ti ti-menu-deep`} />
+					{opened ? <i className='ti ti-x'></i> : <i className={`ti ti-menu-deep`} />}
 				</button>
 
 				<div

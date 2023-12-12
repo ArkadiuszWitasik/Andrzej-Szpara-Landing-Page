@@ -3,10 +3,108 @@
 	display: flex;
 	flex-direction: column;
 	margin: 30px auto 0;
-	height: 100vh;
-	border: 1px solid blue;
+	gap: 30px;
 }
 
+.customArrow {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	border: none;
+	background-color: transparent;
+	font-size: 2rem;
+	color: var(--font-color);
+}
+
+.customLeftArrow {
+	left: 5px;
+}
+
+.customRightArrow {
+	right: 5px;
+}
+
+.unselectedIndicator,
+.selectedIndicator {
+	cursor: pointer;
+	margin: 5px 5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+}
+
+
+.selectedIndicator {
+	background-color: var(--font-color);
+}
+
+.unselectedIndicator {
+	background-color: var(--background-color-light);
+}
 .aboutDescription {
 	text-wrap: balance;
+}
+
+.carouselWrapper {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	margin: 0 auto 0;
+}
+
+.carouselTitle {
+	font-weight: bold;
+	text-align: center;
+	z-index: 1;
+	color: var(--primary-color);
+}
+
+.carouselPhotoContainer {
+	position: relative;
+	height: 50vh;
+	width: 300px;
+	margin: 0 auto 0;
+}
+
+@media (max-width: 320px) {
+	.carouselWrapper {
+		width: 250px;
+	}
+}
+
+@media (min-width: 768px) {
+	.aboutContainer {
+		flex-direction: row-reverse;
+	}
+
+	.aboutDescription {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+	}
+
+	.carouselTitle {
+		font-size: 1.2rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.aboutDescription {
+		width: 40%;
+	}
+
+	.carouselWrapper {
+		margin: 0;
+	}
+
+	.aboutDescription {
+		font-size: 1.2rem;
+	}
+
+	.aboutContainer {
+		margin: 90px auto 0;
+		justify-content: space-evenly;
+		gap: 50px;
+	}
 }

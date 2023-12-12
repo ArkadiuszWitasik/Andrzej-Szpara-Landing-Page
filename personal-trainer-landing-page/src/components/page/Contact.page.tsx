@@ -14,7 +14,7 @@ function ContactPage() {
 						<p className={classes.contactInfoItemTitle}>TELEFON</p>
 						<div className={classes.contactInfoItemDescription}>
 							<div className={classes.verticalDivider} />
-							<p className={classes.contactInfoItemDescriptionText}>999 999 999</p>
+							<p className={classes.contactInfoItemDescriptionText}>534 958 464</p>
 						</div>
 					</div>
 					<div className={classes.contactInfoItem}>

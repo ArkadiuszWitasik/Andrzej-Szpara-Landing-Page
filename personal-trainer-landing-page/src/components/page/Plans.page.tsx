@@ -6,12 +6,19 @@ import Image from 'next/image';
 
 function PlansPage() {
 	return (
-		<section id='plans'>
+		<section id='plans' style={{marginTop: '30px'}}>
 			<SubHeading title='plany' subtitle='plany' />
 			<div className={classes.offersContainer}>
 				<div className={classes.trainOfferContainer}>
 					<div className={classes.imageContainer}>
-						<Image src={Train} alt='' fill style={{ objectFit: 'contain', objectPosition: 'top' }} sizes='100vw' />
+						<Image
+							src={Train}
+							alt='Trener personalny trzymający sztangę'
+							fill
+							style={{ objectFit: 'contain', objectPosition: 'top' }}
+							sizes="(max-width: 768px) 100vw, 33vw"
+							loading='lazy'
+						/>
 					</div>
 					<div>
 						<p className={`${classes.offerTitle} ${classes.trainOfferTitleOffset}`}>TRENING</p>
@@ -111,7 +118,14 @@ function PlansPage() {
 						</ul>
 					</div>
 					<div className={classes.imageContainer}>
-						<Image src={Diet} alt='' fill style={{ objectFit: 'contain', objectPosition: 'top' }} sizes='100vw' />
+						<Image
+							src={Diet}
+							alt='Owsianka z owocami a obok niej mleko'
+							fill
+							style={{ objectFit: 'contain', objectPosition: 'top' }}
+							sizes="(max-width: 768px) 100vw, 33vw"
+							loading='lazy'
+						/>
 					</div>
 				</div>
 			</div>

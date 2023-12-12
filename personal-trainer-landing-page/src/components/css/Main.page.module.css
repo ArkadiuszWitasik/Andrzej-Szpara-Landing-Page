@@ -30,7 +30,7 @@
 }
 
 .tabletFreeConsultationContainer {
-	display: none;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	margin: 0 10px 0;
@@ -56,6 +56,10 @@
 	gap: 200px;
 }
 
+.contactRef {
+	border-bottom: 1px solid var(--font-color-light);
+}
+
 .uppercaseBoldText {
 	font-weight: bold;
 	color: var(--primary-color);
@@ -78,7 +82,7 @@
 }
 
 .desktopConsultationContainer {
-	display: none;
+	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	width: 50%;
@@ -111,11 +115,6 @@
 	.mainPhoto {
 		height: 300px;
 		width: 300px;
-		border: 1px solid cyan;
-	}
-
-	.freeConsultationContainer {
-		display: none;
 	}
 }
 
@@ -125,14 +124,6 @@
 		height: 90vh;
 	}
 
-	.freeConsultationContainer {
-		display: none;
-	}
-
-	.tabletFreeConsultationContainer {
-		display: flex;
-	}
-
 	.plansRedirectText {
 		font-size: 1.5rem;
 	}
@@ -140,7 +131,6 @@
 	.mainPhoto {
 		height: 660px;
 		width: 500px;
-		border: 1px solid orange;
 	}
 }
 
@@ -149,18 +139,9 @@
 		padding-top: 0px;
 	}
 
-	.freeConsultationContainer {
-		display: none;
-	}
-
-	.tabletFreeConsultationContainer {
-		display: flex;
-	}
-
 	.mainPhoto {
 		height: 600px;
 		width: 500px;
-		border: 1px solid lime;
 	}
 }
 
@@ -169,39 +150,18 @@
 		padding-top: 0px;
 	}
 
-	.freeConsultationContainer {
-		display: none;
-	}
-
-	.tabletFreeConsultationContainer {
-		display: none;
-	}
-
 	.plansRedirectText {
 		width: 20%;
-	}
-
-	.desktopConsultationContainer {
-		display: flex;
 	}
 
 	.mainPhoto {
 		height: 550px;
 		width: 500px;
-		border: 1px solid magenta;
 	}
 }
 
 @media (min-width: 1400) {
 	.mainSection {
 		padding-top: 0px;
-	}
-
-	.desktopConsultationContainer {
-		display: flex;
-	}
-
-	.mainPhoto {
-		border: 1px solid brown;
 	}
 }
